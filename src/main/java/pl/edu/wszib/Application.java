@@ -4,6 +4,7 @@ import java.time.*;
 import java.util.TimeZone;
 
 public class Application {
+
     public static void main(String[] args) {
         Clock clock = Clock.systemDefaultZone();
 
@@ -54,7 +55,6 @@ public class Application {
         System.out.println("First day of da month " + monthInfo.getFirstDay());
         System.out.println("Last day of da month " + monthInfo.getLastDay());
         System.out.println("Number of days of previous month " + monthInfo.getNoDaysInMonth().getDays());
-
     }
 
     public static MonthInfo getFirstLastDay(LocalDate time){
